@@ -1,37 +1,81 @@
-zmienna = "ciąg znaków"
-print(len(zmienna))  #drukuje na ekranie ilosc znakow(ze spacjami!!!!)
-print(zmienna[0])# bedzie "c", poniewaz pierwszy znak jest 0(mozna potraktowac string jak tablice)
-print(zmienna[0:5])#od drugiego do 6 znaku
-print(zmienna[-5]) # 5 od konca
-print(zmienna[3:]) #od 4 znaku i do konca
-print(zmienna[:5]) # od poczatku do 6 znaku
-print(zmienna[:]) #maksymalna skrajnie z jednej i z drugiej strony
-print(zmienna[::2]) # co drugi znak(wszystko od poczatku do konca)
+zmienna = "  hdgfcjFYUKHYFhdguytdrJJFJHDTFJGDGXtst"
+print(zmienna.upper()) #litery robia sie wieksze
+print(zmienna.lower()) #litery robia sie mniejsze
+print(zmienna.title()) #pierwsza litera, wielka reszta male
+print(zmienna.lstrip()) #obcina po lewej(rstrip - po prawej)
+print(zmienna.find("JJF")) #znajdz
+print(zmienna.replace("H","O")) #zamiana znakow na inne
+print("H" in zmienna)#czy H jest w zmienna
+print("G" not in zmienna)#czy G nie ma w zmienna
 
-#[x:y:z]
-# x-pocztek y-koniec z-krok
-print(zmienna) #caly string
+print(10/3)
+print(10//3)#zaokraglic do calosci
+print(10%3)#reszta z dzielenia
+print(10**3)#do potegi
 
-imie = "Darya"
-nazwisko = "Feaktsistava"
-print(imie + " " + nazwisko)
-print(imie, nazwisko, end=".") #skopiowac linie - Ctl+D !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-print(imie * 3, nazwisko, end=".") #end nie przenosi do nastepnej linii
-print(imie * 3, nazwisko, end="\n") #\n konczy linie
-print(imie * 3, nazwisko, end=".")
+import math
+print(round(2.9)) #zaokraglic
+print(abs(-2.9)) #wartosc bezwzgledna
 
-#FORMATOWANY STRING
-print("Witaj," , imie, "bjjdjdjdhdj")
-print(f"Witaj,{imie}bjjdjdjdhdj") #f na poczatku zeby dac programowi znac, ze to formatowany string
+print(math.ceil(2.2))
 
-print(type(imie)) #drukuje typ zmiennej!!
+#kiedy podajemy cos (input) komputer traktuje to jako string
+#x = input("x: ")
+#y = int(x) + 1
+#print(y)
+
+#BOOL
+#nie jest 0 -> true
 
 
-x=input("podaj swoj wiek: ")#zaznaczyc wszystko i wpisac 1 cudzyslow  => wszystko w cudzyslowie
-print(int(x) + 2) #zmienic typ zmiennej
+# != -> nie rowna sie
+# >>> "bag" > "apple" bo asci b wiekszy niz a
+# >>> "BAG" != "bag" bo wieksze literymaka wieksze asci
+print(ord("b"))
+print(ord("B"))
 
-#fill() - wypelnic; .zfill() - wypelnic zerami
-james_bond=7
-print(str(james_bond).zfill(3))
+
+#PETLA IF
+
+t=120
+if t==122:
+    print("ghfhjfyht")
+elif t==121:
+    print("abcdef")
+else: print("cosinnego")
+
+if zmienna:
+    print("true")
+else: print("false")
+
+
+#ZADANIE
+#wiek = input("Wiek= ")
+#if int(wiek) >= 18:
+#    print("Ilegible")
+#else: print("Not ilegible")
+
+
+#PETLA RANGE(FOR)
+for z in range(4):
+    print(z)
+for a in range(4,10):
+    print(a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
