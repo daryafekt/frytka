@@ -1,0 +1,63 @@
+M = 1000
+X = 10
+V = 5
+C = 100
+I = 1
+D = 500
+L = 50
+
+zmienna = input("podaj datę ")
+a = 0
+
+v = zmienna.find("V")
+x = zmienna.find("X")
+i = zmienna.find("I")
+l = zmienna.find("L")
+m = zmienna.find("M")
+d = zmienna.find("D")
+c = zmienna.find("C")
+
+xc = zmienna.count("X")
+ic = zmienna.count("I")
+vc = zmienna.count("V")
+lc = zmienna.count("L")
+dc = zmienna.count("D")
+cc = zmienna.count("C")
+mc = zmienna.count("M")
+
+if "X" and "I" and "V" in zmienna:
+    if v > i: a = a + xc * X + vc * V - ic * I
+    if v < i: a = a + xc * X + vc * V + ic * I
+elif "X" and "I" in zmienna:
+    if x < i: a = a + xc * X + ic * I
+    if x > i: a = a + xc * X - ic * I
+elif "V" and "I" in zmienna:
+    if v < i: a = a + vc * V + ic * I
+    if v > i: a = a + vc * V - ic * I
+elif "L" and "X" in zmienna:
+    if l < x: a = a + lc * L + xc * X
+    if x > l: a = a + lc * L - xc * X
+elif "C" and "X" in zmienna: a = a + xc * X + cc * C
+elif "C" and "D" in zmienna:
+    if d < c: a = a + dc * D + cc * C
+    if d > c: a = a + dc * D - cc * C
+elif "C" and "M" in zmienna:
+    if m < c: a = a + mc * M + cc * C
+    if m > c: a = a + mc * M - cc * C
+elif "X" in zmienna:
+     a = a + xc * X
+elif "I" in zmienna:
+     a = a + ic * I
+elif "V" in zmienna:
+     a = a + vc * V
+elif "C" in zmienna:
+     a = a + cc * C
+elif "M" in zmienna:
+    a = a + mc * M
+elif "D" in zmienna:
+    a = a + dc * D
+elif "L" in zmienna:
+    a = a + lc * L
+
+
+print(a)
