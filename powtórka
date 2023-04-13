@@ -1,0 +1,93 @@
+#ZADANIE 1
+a='My jestesmy krasnoludki, hopsasa, hopsasa'
+
+j=a.find("j")
+b=a[j:j+8]
+print("Zmienna b ma wartość =", b)
+
+c=a[-7:]
+print("Zmienna c ma wartość =", c)
+
+D=a[:2]
+d=D.lower()
+print("Zmienna d ma wartość =", d)
+
+k=a.find("k")
+i=a.find("i")
+E=a[k:i+1]
+e=E.upper()
+print("Zmienna e ma wartość =", e)
+
+print("Zmienna e(małe) ma wartość =", e.lower())
+
+print("Zmienna d(duże) ma wartość =", d.capitalize())
+
+print(d.capitalize(), b, e.lower() + ",", c + ",", c )
+
+#ZADANIE 2
+I="Rwdogrbnrimlnvsspponbnf"
+N="gClkjrvrtudrusjfdoveseh"
+
+Wi=I[::3]
+print("Zmienna Wi ma wartość =", Wi)
+
+Wn=N[1::4]
+print("Zmienna Wn ma wartość =", Wn)
+
+print(Wi, Wn)
+
+#ZADANIE 3
+cs=a.count("s")
+ca=a.count("a")
+print("Liczba s:", cs,"; liczba a:", ca)
+
+#ZADANIE 4
+p="Pxrxogxxrxamxoxwaxnixxexx xtxo xcxzexxscx ixnfxoxxrxxmxaxtxyxkxxixxx."
+pf=(p.replace("x",""))
+print(pf)
+
+#ZADANIE 5
+# x=input("Podaj liczbę 1: ")
+# y=input("Podaj liczbę 2: ")
+# print("a = ", float(x)+float(y))
+# print("b = ", abs(float(x)-float(y)))
+# print("c = ", float(x)**3 , float(y)**3)
+# print("d = ", float(x)%& , float(y)%7)
+
+#ZADANIE 6
+A = "\033[1;33;46m"
+B = "\033[1;30;41m"
+C = "\033[1;31;44m"
+re = "\033[0m"
+print(C + "Programowanie"+ re, A+ "jest"+ re, B+ "SUPER"+ re)
+
+#ZADANIE 7
+I=1
+V=5
+X=10
+L=50
+C=100
+D=500
+M=1000
+
+z1=input("Podaj liczbę rzymską 1: ")
+z2=input("Podaj liczbę rzymską 2: ")
+a1=0
+b1=0
+for i in range(z1.len()):
+  if z1[i]=="I" : a1=a1+I
+  if z1[i]=="X" : a1 = a1 + X
+  if z1[i]=="V" : a1 = a1 + V
+  if z1[i]=="L" : a1 = a1 + L
+  if z1[i]=="C" : a1=a1+C
+  if z1[i]=="D" : a1 = a1 + D
+  if z1[i]=="M" : a1 = a1 + M
+for i in range(z2.len()):
+  if z2[i]=="I" in z1: b1=b1+I
+  if z2[i]=="X" in z1: b1 = b1 + X
+  if z2[i]=="V" in z1: b1 = b1 + V
+  if z2[i]=="L" in z1: b1 = b1+ L
+  if z2[i]=="C" in z1: b1=b1+C
+  if z2[i]=="D" in z1: b1 = b1 + D
+  if z2[i]=="M" in z1: b1 = b1 + M
+  x1=b1+a1
