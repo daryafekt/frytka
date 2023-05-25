@@ -1,0 +1,14 @@
+# first = open("Tekst1.txt", "r")
+# print(first.read(4))
+# print(first.read())
+# print(first.read(4))
+# print(first.read())
+# print(first.read(9))
+# first.seek(0)
+# print("new\n" , first.read())
+# first = open("Tekst1.txt", "w")
+# first.write("new tekst")
+# first.close()
+#
+# third = open("Tekst1.txt", "w")
+#third
