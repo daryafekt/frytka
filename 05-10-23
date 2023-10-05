@@ -1,0 +1,18 @@
+# x=True
+# while x == True:
+#     y=input("Dalsze działania: ")
+#     if y=="quit":
+#         x=False
+
+uczniowie = []
+oceny = []
+def dodaj_ocene(uczen, ocena):
+    uczniowie.append(uczen)
+    oceny.append(ocena)
+    return True
+
+def usun_ocene(uczen, ocena):
+
+    return True
+dodaj_ocene("Jan", 4)
+print(uczniowie, oceny)
