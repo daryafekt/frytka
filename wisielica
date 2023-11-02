@@ -1,0 +1,14 @@
+slowo = "wisieliec"
+y=len(slowo)
+szyfr = y*"-"
+print(szyfr)
+def sprawdz():
+    x = input("podaj litere: ")
+    for i in slowo:
+      if i==x:
+        m = slowo.find(x)
+        n = szyfr[m].replace( szyfr[m], x)
+        print(szyfr[:m] + n + szyfr[m+1:])
+      else: print(szyfr)
+
+sprawdz()
