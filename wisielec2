@@ -1,0 +1,18 @@
+word = "wisieliec"
+y=len(word)
+szyfr = y*"-"
+print(szyfr)
+def check():
+    x = input("podaj litere: ")
+    for i in word:
+      if i==x:
+        m = word.find(x)
+        n = szyfr[m].replace( szyfr[m], x)
+        new = szyfr[:m] + n + szyfr[m+1:]
+    print(new)
+      # else: print(szyfr)
+
+n=10
+while n>0:
+    check() 
+    n=n-1
