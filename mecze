@@ -1,0 +1,18 @@
+#1.1
+file = open("mecz.txt")
+file1 = file.read()
+n=file1[0]
+count1 = 0
+count3 = 0
+for i in file1:
+    m=i
+    if n!=m : count1 += 1
+    n=m
+print(count1)
+#1.2
+count2a=0
+count2b=0
+for i in file1[0:2005]:
+    if i=="A": count2a+=1
+    if i=="B": count2b+=1
+print (count2a , ":" , count2b, "-", "Drużyna B.")
